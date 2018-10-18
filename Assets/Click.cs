@@ -18,9 +18,4 @@ public class Click : MonoBehaviour
 
     }
 
-    void OnMouseDown()
-    {
-        Reset.GetComponent<GameControllerM>().GenerateQuestionM();
-    }
-
 }

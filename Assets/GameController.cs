@@ -16,7 +16,9 @@ public class GameController : MonoBehaviour
 
     // Use this for initialization
     void Start () {
-        GenerateQuestion();
+        // Starting in 0 seconds.
+        // a projectile will be launched every 5 seconds
+        InvokeRepeating("GenerateQuestion", 0.0f, 5f);
     }
 	
 	// Update is called once per frame

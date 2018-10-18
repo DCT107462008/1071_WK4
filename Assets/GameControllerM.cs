@@ -16,17 +16,18 @@ public class GameControllerM : MonoBehaviour {
 
 
 	// Use this for initialization
-	void Start () {
-        GenerateQuestionM();
+	void Start () 
+    {
+        // Starting in 0 seconds.
+        // a projectile will be launched every 5 seconds
+        InvokeRepeating("GenerateQuestionM", 0.0f, 5f);
 
     }
 	
 	// Update is called once per frame
 	void Update () {
-	
-	}
 
-
+    }
 
     public void GenerateQuestionM()
     {
